@@ -11,7 +11,7 @@ import java.util.List;
 
 public class Solution {
     public static void main(String[] args) throws IOException {
-        FileInputStream inputStream = new FileInputStream("/home/gangmaster/Documents/test_file");
+        FileInputStream inputStream = new FileInputStream(args[0]);
         List<Character> list = new ArrayList<>();
         while (inputStream.available() > 0) {
             list.add((char) inputStream.read());
